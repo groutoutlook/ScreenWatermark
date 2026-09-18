@@ -17,10 +17,6 @@ A tiny, low-resource screen watermarking tool.
 
 ![banner](./screenshot.png)
 
-# Download
-
-[Releases](https://github.com/xland/ScreenWatermark/releases) (1.5MB)
-
 # Usage
 
 ```shell
