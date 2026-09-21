@@ -3,7 +3,7 @@ A tiny, low-resource screen watermarking tool.
 
 # Features
 
-- Extremely lightweight, `1.5MB`.
+- Extremely lightweight, `1.12MB`.
 - Very low memory footprint, `4.5MB`.
 - No CPU usage, `0%`.
 - Easy to maintain, only one `main.cpp` file.
@@ -15,13 +15,13 @@ A tiny, low-resource screen watermarking tool.
 - Supports features such as text color, opacity, rotation angle, text spacing, etc.
 - Does not support process watchdog or auto-restart features.
 
-![banner](./screenshot.png)
+![example invocation](./screenshot.png)
 
 # Usage
 
-```shell
-> ScreenWatermark.exe Hello Arial 16 26 -30 66 166 188 1 255 122 0 80
-> ScreenWatermark.exe 中文 SimHei 16 26 -30 66 166 188 1 255 122 0 80
+```pwsh
+ScreenWatermark.exe Hello Arial 16 26 -30 66 166 188 1 255 122 0 80
+ScreenWatermark "$(Get-Date -UFormat "%R")" IosevkaNerdFontMono-Medium 16 26 -30 0 255 120 1 120 255 0 40
 ```
 - `"Hello"` : Watermark text
 - `"Arial"` : Font name
@@ -39,7 +39,7 @@ A tiny, low-resource screen watermarking tool.
 
 # Note
 
-- Not all system-installed fonts are usable. The following fonts have been tested and confirmed to work:
+- Not all system fonts are usable. The following fonts have been tested and confirmed to work **with CJK**:
   - SimHei
   - SimKai
   - SimFang
